@@ -1,20 +1,30 @@
-.container {
+
+.resize-drag {
+  position: relative;
+  border-radius: 8px;
+  background-color: #29e;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+
+  touch-action: none;
+
+  /* This makes things *much* easier */
+  box-sizing: border-box;
+}
+
+.resize-drag img {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100vh;
+}
+.bg {
   background: url('https://images.nationalgeographic.org/image/upload/v1638892272/EducationHub/photos/hoh-river-valley.jpg');
   height: 414px;
-  aspect-ratio: 16/9;
+  background-size: cover;
   overflow: hidden;
-  position: relative;
-  
-}
 
-#transform-image {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 1px solid transparent;
-
-}
-#transform-image:hover {
-  border-color: red;
 }
